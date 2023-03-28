@@ -1,0 +1,34 @@
+.main_header {
+    height: 5rem;
+}
+
+.left_header {
+    width: 20%;
+    margin-left: 10rem;
+}
+
+.mid_header {
+    width: 13%;
+}
+
+.right_header {
+    width: 30%;
+    padding: 1rem 3rem;
+}
+
+.right_header_icons_container {
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.left_header h2 span {
+    color: #65b8ff;
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left_header h2 {
+    color: rgb(210, 210, 210);
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

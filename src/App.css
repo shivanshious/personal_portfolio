@@ -1,0 +1,21 @@
+/*  Some common styles */
+
+.spaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spaceAround{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.width100{
+    width: 100%;
+}
+
+.container{
+    margin: 0 6rem;
+}
