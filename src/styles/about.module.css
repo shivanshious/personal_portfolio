@@ -1,0 +1,16 @@
+.about_container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about_container h2 {
+    font-family: sans-serif;
+    color: #65b8ff;
+    font-size: 34px;
+}
+
+.about_container p {
+    color: rgb(210, 210, 210);
+    font-size: 20px;
+    line-height: 1.4;
+}
