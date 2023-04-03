@@ -4,8 +4,10 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
+  const navigate = useNavigate();
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -16,6 +18,11 @@ const ProjectCard = ({ project }) => {
       setScroll(window.scrollY > 1200);
     });
   }, []);
+
+  const handleCardClick = () => {
+    navigate(`/projects/${project.route}`);
+  };
+
   return (
     <>
       <Card
@@ -26,7 +33,7 @@ const ProjectCard = ({ project }) => {
         }}
         className={`${scroll ? "animate__animated animate__slideInUp" : ""}`}
       >
-        <CardActionArea>
+        <CardActionArea onClick={() => handleCardClick()}>
           <CardMedia
             component="img"
             height="180"
