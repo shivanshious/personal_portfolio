@@ -10,9 +10,8 @@ export const designation = {
   text: "a Computer Science Graduate",
 };
 
-export const technicalSkills = {
-  text: "Technical Skills",
-  frontend: {
+export const technicalSkills1 = [
+  {
     heading: "Frontend",
     technologies: [
       "React Js",
@@ -22,23 +21,26 @@ export const technicalSkills = {
       "React Native (Beginner)",
     ],
   },
-  backend: {
+  {
     heading: "Backend",
     technologies: ["Node Js", "Express Js", "Moleculer Js"],
   },
-  db: {
+  {
     heading: "Databases",
     technologies: ["MongoDB", "Postgres"],
   },
-  db_lang: {
+];
+
+export const technicalSkills2 = [
+  {
     heading: "Database Languages",
     technologies: ["NoSql", "MySql"],
   },
-  designing: {
+  {
     heading: "Designing",
     technologies: ["Material UI", "Bootstrap", "Ant Design"],
   },
-  otherSkills: {
+  {
     heading: "Other Useful Skills",
     technologies: [
       "HTML/CSS",
@@ -49,7 +51,7 @@ export const technicalSkills = {
       "OOPS programming concepts",
     ],
   },
-};
+];
 
 export const educationTableHeadings = [
   "S No",
@@ -79,3 +81,4 @@ export const educationTableData = [
   ],
   ["3", "10th", "NA", "Delhi United Christian Sr Sec School", "2015", "76%"],
 ];
+

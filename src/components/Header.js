@@ -14,7 +14,7 @@ const Header = () => {
       setScroll(true);
     }
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY == 0);
+      setScroll(window.scrollY === 0);
     });
   }, []);
 

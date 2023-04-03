@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { technicalSkills } from "../constants/data";
+import { technicalSkills1, technicalSkills2 } from "../constants/data";
 import styles from "../styles/skills.module.css";
 import "animate.css";
 import SkillBox from "./SkillBox";
@@ -24,7 +24,7 @@ const Skills = () => {
                   scroll ? "animate__animated animate__fadeInUp" : ""
                 }`}
               >
-                {technicalSkills.text}
+                Technical Skills
               </p>
             </div>
             <div className={`${styles.heading_container_extra}`}></div>
@@ -37,18 +37,15 @@ const Skills = () => {
                   : ""
               }`}
             >
-              <SkillBox
-                heading={technicalSkills.frontend.heading}
-                technologies={technicalSkills.frontend.technologies}
-              />
-              <SkillBox
-                heading={technicalSkills.backend.heading}
-                technologies={technicalSkills.backend.technologies}
-              />
-              <SkillBox
-                heading={technicalSkills.otherSkills.heading}
-                technologies={technicalSkills.otherSkills.technologies}
-              />
+              {technicalSkills1.map((item, idx) => {
+                return (
+                  <SkillBox
+                    id={idx}
+                    heading={item.heading}
+                    technologies={item.technologies}
+                  />
+                );
+              })}
             </div>
             <div
               className={`${styles.skills_holder} ${
@@ -57,18 +54,15 @@ const Skills = () => {
                   : ""
               }`}
             >
-              <SkillBox
-                heading={technicalSkills.db_lang.heading}
-                technologies={technicalSkills.db_lang.technologies}
-              />
-              <SkillBox
-                heading={technicalSkills.db.heading}
-                technologies={technicalSkills.db.technologies}
-              />
-              <SkillBox
-                heading={technicalSkills.designing.heading}
-                technologies={technicalSkills.designing.technologies}
-              />
+              {technicalSkills2.map((item, idx) => {
+                return (
+                  <SkillBox
+                    id={idx}
+                    heading={item.heading}
+                    technologies={item.technologies}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

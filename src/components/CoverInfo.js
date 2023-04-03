@@ -15,7 +15,7 @@ const CoverInfo = () => {
       setScrollImg(true)
     }
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY == 0);
+      setScroll(window.scrollY === 0);
     });
     window.addEventListener("scroll", () => {
       setScrollImg(window.scrollY < 90);
