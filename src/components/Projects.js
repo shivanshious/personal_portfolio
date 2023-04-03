@@ -18,7 +18,7 @@ const Projects = () => {
           >
             {projectsData.map((project, idx) => {
               return (
-                <Grid item xs={4}>
+                <Grid item xs={4} key={idx}>
                   <ProjectCard project={project} />
                 </Grid>
               );

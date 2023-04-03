@@ -14,10 +14,10 @@ const EducationTable = () => {
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              {educationTableHeadings.map((heading,idx) => {
+              {educationTableHeadings.map((heading, idx) => {
                 return (
                   <TableCell
-                  id={idx}
+                    key={idx}
                     sx={{
                       color: "rgb(210,210,210)",
                       fontSize: "large",
@@ -36,14 +36,14 @@ const EducationTable = () => {
                 key={row[0]}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
               >
-                {row.map((item,idx) => {
+                {row.map((item, idx) => {
                   return (
                     <TableCell
                       align="left"
                       sx={{
                         color: "rgb(210,210,210)",
                       }}
-                      id={idx}
+                      key={idx}
                     >
                       {item}
                     </TableCell>

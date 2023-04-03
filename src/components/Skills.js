@@ -40,7 +40,7 @@ const Skills = () => {
               {technicalSkills1.map((item, idx) => {
                 return (
                   <SkillBox
-                    id={idx}
+                    key={idx}
                     heading={item.heading}
                     technologies={item.technologies}
                   />
@@ -57,7 +57,7 @@ const Skills = () => {
               {technicalSkills2.map((item, idx) => {
                 return (
                   <SkillBox
-                    id={idx}
+                    key={idx}
                     heading={item.heading}
                     technologies={item.technologies}
                   />
