@@ -50,3 +50,32 @@ export const technicalSkills = {
     ],
   },
 };
+
+export const educationTableHeadings = [
+  "S No",
+  "Degree",
+  "Specialization",
+  "Institute",
+  "Year of Passing",
+  "Score",
+];
+
+export const educationTableData = [
+  [
+    "1",
+    "B Tech",
+    "Computer Science",
+    "Panipat Institute of Engg and Technology",
+    "2022",
+    "72%",
+  ],
+  [
+    "2",
+    "12th",
+    "PCM & Cs",
+    "Delhi United Christian Sr Sec School",
+    "2017",
+    "76%",
+  ],
+  ["3", "10th", "NA", "Delhi United Christian Sr Sec School", "2015", "76%"],
+];

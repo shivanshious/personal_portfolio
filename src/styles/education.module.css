@@ -1,0 +1,14 @@
+.education_container {
+    margin-top: 4rem;
+}
+
+.education_container p {
+    color: #65b8ff;
+    font-family: serif;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.table_container {
+    margin-top: 3rem;
+}

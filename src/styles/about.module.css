@@ -4,9 +4,10 @@
 }
 
 .about_container h2 {
-    font-family: sans-serif;
+    font-family: serif;
     color: #65b8ff;
-    font-size: 34px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .about_container p {
