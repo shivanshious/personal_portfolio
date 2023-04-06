@@ -82,3 +82,25 @@ export const educationTableData = [
   ["3", "10th", "NA", "Delhi United Christian Sr Sec School", "2015", "76%"],
 ];
 
+export const experienceData = [
+  {
+    companyName: "Hestabit Technology",
+    designation: "Trainee Software Engineer",
+    joining: {
+      from: "October, 2022",
+      currentlyWorking: true,
+      to: "currently working here",
+    },
+    location: "Noida, Uttar Pradesh",
+  },
+  {
+    companyName: "Forcebolt Technology",
+    designation: "FullStack Developer Intern",
+    joining: {
+      from: "January, 2022",
+      currentlyWorking: false,
+      to: "Jul, 2022",
+    },
+    location: "Mohali, Punjab",
+  },
+];

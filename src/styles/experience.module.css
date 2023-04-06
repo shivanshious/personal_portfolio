@@ -1,0 +1,58 @@
+.experience_container {
+    margin-top: 5rem;
+}
+
+.experience_heading {
+    color: #65b8ff;
+    font-family: serif;
+    font-size: 40px;
+}
+
+.experiences_holder {
+    width: 85%;
+    float: right;
+}
+
+.experience_bar {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    background: #3e3e3e;
+}
+
+.experience_icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 64%;
+    text-align: center;
+}
+
+.icon {
+    height: 85px !important;
+    width: 85px !important;
+    color: #65b8ff !important;
+}
+
+.experience_info {
+    width: 50%;
+}
+
+.experience_info h2 {
+    color: #65b8ff;
+    margin-bottom: 8px;
+}
+
+.experience_info h3 {
+    color: rgb(210, 210, 210);
+    margin-top: 0;
+}
+
+.experience_info p {
+    color: rgb(210, 210, 210);
+    margin-top: 25px;
+}
+
+.joining_info {
+    width: 30%;
+    color: rgb(210, 210, 210);
+}
