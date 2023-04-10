@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
             image={require(`../Images/projectImages/${
               project.imgUrl ? project.imgUrl : "test.png"
             }`)}
-            alt="green iguana"
+            alt={project.name}
           />
           <CardContent>
             <Typography
