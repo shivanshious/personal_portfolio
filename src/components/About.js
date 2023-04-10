@@ -5,7 +5,7 @@ import { coverLetter } from "../constants/data";
 const About = () => {
   return (
     <>
-      <div className="container">
+      <div>
         <div className={`${styles.about_container}`}>
           <h2>About Me</h2>
           <p>{coverLetter.text}</p>

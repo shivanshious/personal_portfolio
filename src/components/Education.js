@@ -12,7 +12,7 @@ const Education = () => {
   }, []);
   return (
     <>
-      <div className={`${styles.education_container} container`}>
+      <div className={`${styles.education_container}`}>
         <p>Education Background</p>
         <div
           className={`${styles.table_container} ${

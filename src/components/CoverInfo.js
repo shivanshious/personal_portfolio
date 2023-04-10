@@ -24,7 +24,7 @@ const CoverInfo = () => {
 
   return (
     <>
-      <div className="container">
+      <div>
         <div className={`${styles.cover_container} spaceAround`}>
           <div className={`${styles.left_cover} `}>
             <h1 className={`${styles.name} `}>{name.text}</h1>

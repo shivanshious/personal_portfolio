@@ -10,6 +10,7 @@ import Skills from "../components/Skills";
 const Homepage = () => {
   return (
     <>
+    <div className="container">
       <Header />
       <CoverInfo />
       <About />
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Education />
       <Projects />
       <Experience />
+    </div>
     </>
   );
 };

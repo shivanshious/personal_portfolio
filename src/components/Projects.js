@@ -8,7 +8,7 @@ import { projectsData } from "../constants/projectsData";
 const Projects = () => {
   return (
     <>
-      <div className={`${styles.projects_container} container`}>
+      <div className={`${styles.projects_container}`}>
         <p className={`${styles.projects_heading}`}>My Work</p>
         <Box sx={{ width: "100%", marginTop: "3rem" }}>
           <Grid

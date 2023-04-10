@@ -15,7 +15,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="container">
+      <div>
         <div className={`${styles.skills_container} spaceBetween`}>
           <div className={`${styles.left_skills_container}`}>
             <div className={`${styles.heading_container}`}>

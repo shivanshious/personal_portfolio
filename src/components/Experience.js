@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { experienceData } from "../constants/data";
 import styles from "../styles/experience.module.css";
 import "animate.css";
-import ApartmentIcon from "@mui/icons-material/Apartment";
+import ExperienceBar from "./ExperienceBar";
 
 const Experience = () => {
   const [scroll, setScroll] = useState(false);
@@ -14,32 +14,19 @@ const Experience = () => {
   }, []);
   return (
     <>
-      <div className={`${styles.experience_container} container`}>
+      <div className={`${styles.experience_container}`}>
         <p className={`${styles.experience_heading}`}>Work Experience</p>
-        <div className={`${styles.experiences_holder}`}>
-          {experienceData.map((experience) => {
-            return (
-              <div
-                className={`${styles.experience_bar} spaceBetween ${
-                  scroll ? "animate__animated animate__fadeInRight" : ""
-                }`}
-              >
-                <div style={{ width: "15%" }}>
-                  <div className={`${styles.experience_icon}`}>
-                    <ApartmentIcon className={`${styles.icon}`} />
-                  </div>
-                </div>
-                <div className={`${styles.experience_info}`}>
-                  <h2>{experience.designation}</h2>
-                  <h3>{experience.companyName}</h3>
-                  <p>{experience.location}</p>
-                </div>
-                <div className={`${styles.joining_info}`}>
-                  {`${experience.joining.from} - ${experience.joining.to}`}
-                </div>
-              </div>
-            );
-          })}
+        <div className="spaceBetween">
+          <div style={{ width: "15%" }}></div>
+          <div
+            className={`${styles.experiences_holder} ${
+              scroll ? "animate__animated animate__slideInRight" : ""
+            }`}
+          >
+            {experienceData.map((experience, idx) => {
+              return <ExperienceBar experience={experience} key={idx} />;
+            })}
+          </div>
         </div>
       </div>
     </>
