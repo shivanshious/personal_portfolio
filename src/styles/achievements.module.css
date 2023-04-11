@@ -1,0 +1,71 @@
+.achievements_container {
+    margin-top: 5rem;
+}
+
+.achievements_heading {
+    color: #65b8ff;
+    font-family: serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.achievements_holder {
+    padding: 0;
+}
+
+.left_arrow {
+    width: 5%;
+}
+
+.right_arrow {
+    width: 5%;
+}
+
+.arrow_color {
+    color: rgb(210, 210, 210);
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
+
+.one_achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3rem;
+    border: 1px solid rgb(210, 210, 210, 0.5);
+    border-radius: 20px;
+    padding: 0.4rem;
+}
+
+.one_achievement img {
+    width: 200px;
+    height: 200px;
+}
+
+.one_achievement p {
+    color: rgb(210, 210, 210);
+}
+
+.content::-webkit-scrollbar {
+    height: 0px;
+}
+
+/* for scroll bar */
+
+/* .content::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: rgba(197, 197, 197, 0.438);
+    border-radius: 10px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 182, 182);
+} */
