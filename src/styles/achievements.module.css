@@ -28,7 +28,7 @@
 .content {
     display: flex;
     width: 80%;
-    overflow-x: scroll;
+    overflow-x: hidden;
     padding-bottom: 1rem;
 }
 
